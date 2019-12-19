@@ -37,6 +37,14 @@ Title:	18px/1.6 'OpenSans', Arial, sans-serif;
 /* #Basic Styles
 ================================================== */
 
+.table_head{
+	border: double;
+	font-weight: bold;
+}
+.table_row{
+	border: double;
+	padding: 10px;
+}
 
 @font-face {
 	font-family: OpenSans;

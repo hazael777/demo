@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{>head}}
+</head>
+<body  class="animsition">
+
+	{{>header}}
+
+	<section class="our-menu" >
+		<div class="container">
+			<div class="wrap-title-our-menu row">
+				<div class="col-12 title-our-menu">
+					<h2>Data Reader</h2>
+				</div>
+			</div>
+		
+			<!-- Main Form -->
+			<div align="center">
+				<table>
+                    <tr class="table_head">
+                        <td class="table_row">Employee</td>
+                        <td class="table_row">Plant</td>
+                        <td class="table_row">Field 1</td>
+                        <td class="table_row">Field 2</td>
+                        <td class="table_row">Field 3</td>
+                        <td class="table_row">Options</td>
+                    </tr>
+                    {{#entries}}
+                        <tr class="table_row">
+                            <td class="table_row">{{employee}}</td>
+                            <td class="table_row">{{plant}}</td>
+                            <td class="table_row">{{field1}}</td>
+                            <td class="table_row">{{field2}}</td>
+                            <td class="table_row">{{field3}}</td>
+                            <td class="table_row"><a href=/delete_entry/{{_id}}>delete</a></td>
+                        </tr>
+                    {{/entries}}
+
+                </table>
+			</div>
+		</div>	
+	</section>
+
+	{{>footer}}
+	
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	{{>imports}}
+
+</body>
+</html>
